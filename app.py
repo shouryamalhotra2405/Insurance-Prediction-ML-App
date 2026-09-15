@@ -70,14 +70,14 @@ st.write(user_df)
 
 
 if st.button("Click to Predict: "):
-  with st.spinner("Predicting.."):
-     import time
-     time.sleep(2)
-  final_ans = model.predict([all_ans])[0]
- if final_ans == 0:
-    st.write("Customer will not buy insurance")
-else:
-    st.write("Customer will buy insurance")
+    with st.spinner("Predicting.."):
+        import time
+        time.sleep(2)
+    final_ans = model.predict([all_ans])[0]
+    if final_ans == 0:
+        st.write("Customer will not buy insurance")
+    else:
+        st.write("Customer will buy insurance")
     
 
 
