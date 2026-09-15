@@ -59,7 +59,7 @@ for index, col_name in enumerate(X.columns):
                               min_value = min_v,
                               max_value = max_v)
   else:
-    value = st.sidebar.number_input(f"Select value for {col_name}:)
+   value = st.sidebar.number_input(f"Select value for {col_name}:")
 
   all_ans.append(value)
   
